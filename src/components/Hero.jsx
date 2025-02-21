@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../assets/ProfileImage.jpg"; 
+import profileImage from "../assets/ProfileImage.png"; 
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -58,8 +58,8 @@ const Hero = () => {
             <motion.img
               src={profileImage}
               alt="Bhawani Shankar"
-              className="w-full h-full object-cover"
-              animate={{ y: [0, -10, 0] }}
+              className="w-full h-full object-cover overflow-visible z-20"
+              animate={{ y: [-20, -40, -20] }}
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
             />
           </div>
